@@ -1,18 +1,22 @@
 {
-  "name": "egypt-banks-scraper",
-  "version": "1.0.10",
+  "name": "banks-fx-scraper",
+  "version": "1.0.13",
   "license": "MIT",
-  "description": "Scrape exchange rates from Egypt banks",
+  "description": "Scrape exchange rates from Banks banks",
   "keywords": [
     "egypt",
+    "hsbc",
     "bank",
     "banks",
     "exchange rates"
   ],
-  "author": "MMayla <mohamed.mayla@gmail.com>",
+  "author": {
+    "name": "MMayla, jjhesk",
+    "email": "jobhesk@gmail.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/MMayla/egypt-banks-scraper.git"
+    "url": "https://github.com/ONode/banks-fx-scraper.git"
   },
   "main": "index.js",
   "scripts": {

@@ -1,17 +1,17 @@
-# Egypt Banks Scraper [![Version](https://img.shields.io/npm/v/egypt-banks-scraper.svg)](https://www.npmjs.com/package/egypt-banks-scraper) [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/MMayla/egypt-banks-scraper/blob/master/LICENSE) [![airbnb code style](https://img.shields.io/badge/code%20style-airbnb-fd5c63.svg)](https://github.com/airbnb/javascript)
+# Banks Scraper [![Version](https://img.shields.io/npm/v/banks-fx-scraper.svg)](https://www.npmjs.com/package/banks-fx-scraper) [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://github.com/MMayla/egypt-banks-scraper/blob/master/LICENSE) [![airbnb code style](https://img.shields.io/badge/code%20style-airbnb-fd5c63.svg)](https://github.com/airbnb/javascript)
 
-Scrape exchange rates from Egypt's banks
+Scrape exchange rates from Egypt's banks and Asia Banks
 
 ## Installation
-```
+```bash
 npm install --save egypt-banks-scraper
 ```
 
 ## Getting Started
 
 ### Require the package
-```
-var EGBScraper = require('egypt-banks-scraper');
+```javascript
+var EGBScraper = require('banks-fx-scraper');
 ```
 
 `getExchangeRates` takes 3 arguments:
@@ -20,14 +20,14 @@ var EGBScraper = require('egypt-banks-scraper');
   - callback function: called when finished with the signature (err, data)
 
 ### To get all banks with all currencies
-```
+```javascript
 EGBScraper.getExchangeRates([], [], (err, data) => {
   // data
 });
 ```
 
 ### To get All banks with certain currencies
-```
+```javascript
 // Get only USD and EUR exchange rates from all banks
 EGBScraper.getExchangeRates([], ['USD', 'EUR'], (err, data) => {
   // data
@@ -35,14 +35,14 @@ EGBScraper.getExchangeRates([], ['USD', 'EUR'], (err, data) => {
 ```
 
 ### To get All exchange rates in certain banks
-```
+```javascript
 EGBScraper.getExchangeRates(['NBG', 'CIB'], [], (err, data) => {
   // data
 });
 ```
 
 ### To get the exchange rates for some currencies and some banks
-```
+```javascript
 EGBScraper.getExchangeRates(['NBG', 'CIB'], ['USD', 'EUR'], (err, data) => {
   // data
 });
@@ -71,9 +71,9 @@ EGBScraper.getExchangeRates(['NBG', 'CIB'], ['USD', 'EUR'], (err, data) => {
 | ADIB | Abu Dhabi Islamic Bank                 |
 | FIBE | Faisal Islamic Bank Of Egypt           |
 | BBE  | Blom Bank Egypt                        |
+| HSBC | The Hongkong and Shanghai Banking Corporation Limited   |
 
 ### To support soon
-- HSBC
 - Mashreq bank
 - Ahli United bank
 - AIBK
