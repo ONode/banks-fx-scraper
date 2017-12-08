@@ -4,7 +4,7 @@ Scrape exchange rates from Egypt's banks and Asia Banks
 
 ## Installation
 ```bash
-npm install --save egypt-banks-scraper
+npm install --save banks-fx-scraper
 ```
 
 ## Getting Started
